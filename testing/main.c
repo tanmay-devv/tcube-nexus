@@ -13,8 +13,20 @@ void drawBoard() {
 // WORK ON THE ALGORITHM FOR THE TURN. THIS IS TEMPORARY.
 
 void turn(int array[3][3]) {
-	char *dec = NULL;
-	scanf("%c", &dec);
+	int row, col;
+	scanf("%d %d", &row, &col);
+
+	if (row >= 0 && row < 3 && col >=0 && col < 3) {
+		int array[row][col];
+		memset( array, 1, row*col*sizeof(int));
+		printf("%d",array[row][col]);
+
+		printf("successfully set! \n");
+	} else {
+		printf("please enter valid row and col\n");
+	}
+		
+
 }
 
 int main() {

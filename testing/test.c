@@ -2,9 +2,10 @@
 
 int main() {
 
-	int num;
-	scanf("%d", &num);
+	char choice = ' ';
+	scanf("%c", &choice);
 
+	printf("%c", choice);
 
 	return 0;
 }
