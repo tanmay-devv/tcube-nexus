@@ -1,12 +1,10 @@
 #include <stdio.h>
 
 int main() {
-	printf("     |         |     \n");
-    printf("     |         |     \n");
-    printf("----------------------\n");
-    printf("     |         |     \n");
-    printf("     |         |     \n");
-    printf("----------------------\n");
-    printf("     |         |     \n");
-    printf("     |         |      \n");
+
+	int num;
+	scanf("%d", &num);
+
+
+	return 0;
 }

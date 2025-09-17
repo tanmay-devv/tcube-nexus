@@ -10,20 +10,22 @@ void drawBoard() {
 	printf("   |    |   \n   |    |   \n");
 }
 
-void turn(int board[3][3]) {
-	board [3][2] = 4;
-	printf("%d", board[3][2]);	
+// WORK ON THE ALGORITHM FOR THE TURN. THIS IS TEMPORARY.
 
+void turn(int array[3][3]) {
+	char *dec = NULL;
+	scanf("%c", &dec);
 }
 
 int main() {
 	
-	int board[3][3] = {{0,0,0},
-		        {0,0,0},
-			{0,0,0}};
-// drawBoard();
+//	int board[3][3] = {{0,0,0},
+//		        {0,0,0},
+//			{0,0,0}};
 
-	turn(board[][]);
+	int board[3][3];	
+	turn(board);	
+
 	return 0;
 }
 
