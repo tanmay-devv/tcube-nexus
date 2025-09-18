@@ -12,9 +12,9 @@ void drawBoard() {
 
 // WORK ON THE ALGORITHM FOR THE TURN. THIS IS TEMPORARY.
 
-void turn(int array[3][3]) {
+void turn(int array[3][3], int counter) {
 	int row, col;
-	int counter = 0;
+//        int counter = 0;
 	scanf("%d %d", &row, &col);
 
 	
@@ -56,7 +56,7 @@ void turn(int array[3][3]) {
 	} else {
 		printf("please enter valid row and col\n");
 	}
-	turn(array);		
+	turn(array,counter);		
 
 }
 
@@ -66,8 +66,9 @@ int main() {
 //		        {0,0,0},
 //			{0,0,0}};
 
-	int board[3][3];	
-	turn(board);
+	int board[3][3];
+	int counter;	
+	turn(board,counter);
 
 	return 0;
 }
